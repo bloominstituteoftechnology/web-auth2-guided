@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
     jwt.verify(
       token,
       JWT_SECRET,
-      (err, decodedToken) => {
+      (err, decodedToken) => { // async form of jwt.verify!
         // async code
         if (err) {
           // token bad
