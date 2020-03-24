@@ -6,6 +6,7 @@ const restricted = require('../auth/restricted-middleware.js');
 router.get('/', restricted, (req, res) => {
   Users.find()
     .then(users => {
+      // only if req.decodedToken.roles.includes('student')
       res.json(users);
     })
     .catch(err => res.send(err));
