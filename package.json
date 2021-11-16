@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "Lambda School",
+  "author": "BloomTech",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
